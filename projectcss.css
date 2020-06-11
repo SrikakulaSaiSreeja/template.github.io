@@ -1,0 +1,104 @@
+body{
+    margin: auto 0;
+}
+.container{
+    
+    background: palevioletred;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,blue), color-stop(100%,skyblue));
+    background: -webkit-linear-gradient(top, blue 0%,skyblue 100%);
+    background: linear-gradient(top, blue 0%,skyblue 100%);
+    
+}
+.sticky{
+    position: fixed;
+    top: 0em;
+    width: 100%;
+}
+.header{
+    display: flex;
+    list-style:none;
+    font-size: 20px;
+    margin: 0;
+}
+li{
+    padding: 20px;
+}
+.contact{
+    display: flex;
+    margin-left:auto;
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cover{
+    background: palevioletred;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(216, 16, 49)), color-stop(100%,pink));
+    background: -webkit-linear-gradient(top,rgb(216, 16, 49)  0%,pink 100%);
+    background: linear-gradient(top,rgb(216, 16, 49)  0%,pink 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: whitesmoke;
+}
+.image{
+    width: 30%;
+    height: 70%;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.zone{    
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(69, 69, 129)), color-stop(100%,skyblue));
+    background: -webkit-linear-gradient(top,rgb(69, 69, 129)  0%,skyblue 100%);
+    background: linear-gradient(top,rgb(69, 69, 129)  0%,skyblue 100%);
+    display: inline-block;
+    padding: 70px;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all 0.3s linear
+}
+.zone:hover{
+    box-shadow: -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;;
+}
+.margingrid{
+    display: grid;
+    gap: 20px;
+    grid-template-rows:repeat(auto-fill,minmax(20px, 1fr));
+    grid-template-columns:repeat(4,1fr) ;
+}
+@media only screen and (max-width:1400px){
+    .zone{
+        height: 200px;
+        width: 200px;
+        padding:10px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .zone{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:800px){
+    .zone{
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    .zone{
+        height: 70px;
+        width: 70px;
+        padding: 10px;
+    }
+}
